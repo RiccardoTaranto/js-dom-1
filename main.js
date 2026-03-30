@@ -22,4 +22,6 @@ Per fare questo bonus potremmo aver bisogno di del metodo string.includes()
 
 console.log('JS DOM 1');
 
+const mioBottone = document.querySelector('#whiteLamp');
+const miaImmagine = document.querySelector('#btn');
 
