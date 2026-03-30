@@ -22,6 +22,11 @@ Per fare questo bonus potremmo aver bisogno di del metodo string.includes()
 
 console.log('JS DOM 1');
 
-const mioBottone = document.querySelector('#whiteLamp');
-const miaImmagine = document.querySelector('#btn');
+const imgEl = document.querySelector('#whiteLamp');
+const btnEl = document.querySelector('#btn');
 
+btnEl.addEventListener('click', function() {
+    console.log('bottone cliccato!');
+
+    imgEl.src = './img/yellow_lamp.png'
+});
