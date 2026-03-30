@@ -42,5 +42,8 @@ btnEl.addEventListener('click', function() {
     if (imgEl.src.includes('white_lamp')) {
         imgEl.src = './img/yellow_lamp.png';
         btnEl.textContent = 'SPEGNI';
-    } 
+    } else {
+        imgEl.src = './img/white_lamp.png';
+        btnEl.textContent = 'ACCENDI';
+    }
 });
