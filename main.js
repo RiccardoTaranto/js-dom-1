@@ -22,11 +22,25 @@ Per fare questo bonus potremmo aver bisogno di del metodo string.includes()
 
 console.log('JS DOM 1');
 
+
 const imgEl = document.querySelector('#whiteLamp');
 const btnEl = document.querySelector('#btn');
+
+/*
 
 btnEl.addEventListener('click', function() {
     console.log('bottone cliccato!');
 
     imgEl.src = './img/yellow_lamp.png'
+});
+*/
+
+// Bonus
+
+btnEl.addEventListener('click', function() {
+
+    if (imgEl.src.includes('white_lamp')) {
+        imgEl.src = './img/yellow_lamp.png';
+        btnEl.textContent = 'SPEGNI';
+    } 
 });
