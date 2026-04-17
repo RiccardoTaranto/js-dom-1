@@ -19,3 +19,14 @@ Per fare questo bonus potremmo aver bisogno di del metodo string.includes()
 */
 
 
+console.log('JS DOM 1');
+
+// Dichiariamo variabili e recuperiamo gli elementi immagine e bottone
+
+const imgEl = document.getElementById('whiteLamp')
+const btnEl = document.getElementById('btn')
+
+// console.log(imgEl, btnEl);
+
+
+
