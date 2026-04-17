@@ -30,6 +30,7 @@ const btnEl = document.getElementById('btn')
 
 // Ascoltiamo l'evento con funzione anonima
 btnEl.addEventListener('click', function () {
-    // console.log('click! ok!')
+    console.log('click! ok!')
+    imgEl.src = './img/yellow_lamp.png'
 })
 
