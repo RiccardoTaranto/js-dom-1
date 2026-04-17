@@ -1,7 +1,7 @@
 /* 
 
 js-dom-1
-
+Dichiariamo variabili e recuperiamo gli elementi immagine e bottone
 ✅ Inseriamo in pagina l’immagine della lampadina spenta che trovate in allegato e accanto un bottone con la scritta “Accendi”.
 ✅ Al click del bottone, la lampadina dovrà accendersi (dovremo quindi utilizzare l’immagine della lampadina accesa, sempre in allegato)
 
@@ -17,26 +17,17 @@ Per fare questo bonus potremmo aver bisogno di del metodo string.includes()
 
 console.log('JS DOM 1');
 
-// Dichiariamo variabili e recuperiamo gli elementi immagine e bottone
-
 const imgEl = document.getElementById('whiteLamp')
 const btnEl = document.getElementById('btn')
 
-// console.log(imgEl, btnEl);
 
-// Ascoltiamo l'evento con funzione anonima
 btnEl.addEventListener('click', () => {
-    imgEl.src = './img/yellow_lamp.png'
-})
-
-////////////////////////////////////////////
-
-// BONUS
-btnEl.addEventListener('click', () => {
-    if (imgEl.src.includes('whiteLamp')) {
+    if (imgEl.src.includes('white_lamp')) {
         imgEl.src = './img/yellow_lamp.png'
-        btnEl.textContent='SPEGNI'
+        btnEl.textContent = 'SPEGNI'
+    } else {
+        imgEl.src = './img/white_lamp.png'
+        btnEl.textContent = 'ACCENDI'
+
     }
 })
-
-
