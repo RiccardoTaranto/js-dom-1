@@ -28,5 +28,8 @@ const btnEl = document.getElementById('btn')
 
 // console.log(imgEl, btnEl);
 
-
+// Ascoltiamo l'evento con funzione anonima
+btnEl.addEventListener('click', function () {
+    // console.log('click! ok!')
+})
 
